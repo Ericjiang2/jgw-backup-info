@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>隐私政策 · jgw-backup</title>
+<link rel="stylesheet" href="style.css">
+<main>
+<p><a href="index.html">返回应用主页</a></p>
+<h1>jgw-backup 隐私政策</h1>
+<p>更新日期：2026-10-25。本工具仅供维护者自用。</p>
+<h2>访问和用途</h2>
+<p>本工具使用 Google OAuth 的 <code>drive.file</code> 权限，创建、读取和管理本应用创建的备份文件及目录，并查询存储配额。Google 授权仅用于备份、完整性检查、恢复及经维护者确认的备份版本清理。</p>
+<h2>存储和保护</h2>
+<p>Google 访问令牌、刷新令牌和客户端凭证保存在维护者管理的服务器受限配置中。它们不属于公开网页内容，也不提交到公开仓库。备份内容在上传 Google Drive 前由 Restic 加密；恢复密码另行保管。</p>
+<p>目前 Google 授权和配额查询已验证；首次加密云端备份及独立恢复尚待验证。</p>
+<h2>共享和 AI 使用</h2>
+<p>本工具不出售 Google 用户数据，不用于广告，不公开共享备份或网盘文件，也不将通过 Google Drive 取得的文件内容发送给 AI 模型。Google 按其自身条款提供 OAuth 和 Drive 存储服务。</p>
+<h2>保留、撤销和删除</h2>
+<p>在撤销或更换前，凭证用于持续授权访问。维护者可在 <a href="https://myaccount.google.com/connections">Google 账号的第三方连接设置</a> 中撤销授权，并从服务器移除配置。撤销授权不自动删除已有备份。</p>
+<p>备份按维护者确认的保留策略保存。维护者可以删除本应用创建的备份；Google Drive 垃圾桶中的文件仍按 Google 的规则处理。自动清理目前尚未启用。</p>
+<h2>网站和联系</h2>
+<p>这两页静态说明不包含分析脚本、登录表单或 Cookie。托管服务商可能记录标准访问日志。数据处理问题请联系 Google OAuth 权限请求页面列出的用户支持邮箱。</p>
+<p>若工具的权限或数据用途改变，本政策应在改变前更新。</p>
+</main>
+</html>
