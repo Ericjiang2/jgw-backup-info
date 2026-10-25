@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>jgw-backup · 个人备份工具</title>
+<link rel="stylesheet" href="style.css">
+<main>
+<p class="eyebrow">PERSONAL BACKUP UTILITY</p>
+<h1>jgw-backup</h1>
+<p>这是维护者自用的服务器备份工具，用于将应用恢复包加密保存到维护者授权的 Google Drive，并在需要时恢复。</p>
+<p>本网站只介绍用途和数据处理方式，不提供公众注册、Google 登录、网盘文件浏览或服务器管理功能。</p>
+<h2>需要什么权限</h2>
+<p>工具通过 rclone 使用 Google OAuth，申请 <code>drive.file</code> 权限。它用于管理本应用创建的备份文件及目录，而非读取整个网盘。工具也会查询账户存储配额，以检查备份空间。</p>
+<h2>如何处理数据</h2>
+<p>备份内容由 Restic 加密后上传。OAuth 凭证保存在维护者管理的服务器中，不放入公开网站或代码仓库。首次云端备份及独立恢复尚待验证。</p>
+<p>运维面板独立运行，通过私有 SSH 通道访问。</p>
+<p><a href="privacy.html">隐私政策</a></p>
+<p>联系维护者：使用 Google OAuth 权限请求页面列出的用户支持邮箱。</p>
+</main>
+</html>
